@@ -14,11 +14,30 @@
     table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: lightgrey;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     thead, tfoot {
         background-color: gray;
         color: white;
+    }
+
+    tbody > tr:nth-child(2n) {
+        background-color: lightgray;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
     }
 
     td, th {
@@ -34,30 +53,123 @@
 <body>
     <h1>Uso de tabelas grande!</h1>
     <table>
+        <caption>População geral</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Acre</td>
-                <td class="num">830 018</td>
-            </tr>
             <tr>
                 <td>Alagoas</td>
                 <td class="num">3 127 683</td>
             </tr>
             <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
                 <td>Amapá</td>
                 <td class="num">733 759</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">4 73 759</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">2 733 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">5 33 759</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>00000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">4.691.460</td>
             </tr>
         </tfoot>
     </table>
